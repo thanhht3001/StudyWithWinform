@@ -35,12 +35,13 @@
             panel2 = new Panel();
             label2 = new Label();
             label1 = new Label();
-            btnConnect = new Button();
+            btnLan = new Button();
             pbControl = new PictureBox();
             prcbCoolDown = new ProgressBar();
             txtIPServer = new TextBox();
             txtUserName = new TextBox();
             tmCoolDown = new System.Windows.Forms.Timer(components);
+            label3 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbAvatar).BeginInit();
             panel2.SuspendLayout();
@@ -80,9 +81,10 @@
             // 
             panel2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             panel2.BackColor = SystemColors.Control;
+            panel2.Controls.Add(label3);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(label1);
-            panel2.Controls.Add(btnConnect);
+            panel2.Controls.Add(btnLan);
             panel2.Controls.Add(pbControl);
             panel2.Controls.Add(prcbCoolDown);
             panel2.Controls.Add(txtIPServer);
@@ -96,7 +98,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Wide Latin", 15F, FontStyle.Bold, GraphicsUnit.Point, 128);
-            label2.Location = new Point(11, 61);
+            label2.Location = new Point(11, 96);
             label2.Name = "label2";
             label2.Size = new Size(82, 20);
             label2.TabIndex = 5;
@@ -113,18 +115,18 @@
             label1.TabIndex = 3;
             label1.Text = "5 in a line to WIN";
             // 
-            // btnConnect
+            // btnLan
             // 
-            btnConnect.Location = new Point(12, 221);
-            btnConnect.Name = "btnConnect";
-            btnConnect.Size = new Size(75, 23);
-            btnConnect.TabIndex = 4;
-            btnConnect.Text = "Play";
-            btnConnect.UseVisualStyleBackColor = true;
+            btnLan.Location = new Point(198, 234);
+            btnLan.Name = "btnLan";
+            btnLan.Size = new Size(75, 23);
+            btnLan.TabIndex = 4;
+            btnLan.Text = "LAN";
+            btnLan.UseVisualStyleBackColor = true;
             // 
             // pbControl
             // 
-            pbControl.Location = new Point(198, 61);
+            pbControl.Location = new Point(198, 96);
             pbControl.Name = "pbControl";
             pbControl.Size = new Size(94, 94);
             pbControl.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -133,14 +135,14 @@
             // 
             // prcbCoolDown
             // 
-            prcbCoolDown.Location = new Point(11, 131);
+            prcbCoolDown.Location = new Point(11, 166);
             prcbCoolDown.Name = "prcbCoolDown";
             prcbCoolDown.Size = new Size(181, 24);
             prcbCoolDown.TabIndex = 2;
             // 
             // txtIPServer
             // 
-            txtIPServer.Location = new Point(12, 192);
+            txtIPServer.Location = new Point(11, 234);
             txtIPServer.Name = "txtIPServer";
             txtIPServer.Size = new Size(181, 23);
             txtIPServer.TabIndex = 1;
@@ -148,7 +150,7 @@
             // txtUserName
             // 
             txtUserName.Font = new Font("Script MT Bold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtUserName.Location = new Point(11, 91);
+            txtUserName.Location = new Point(11, 126);
             txtUserName.Name = "txtUserName";
             txtUserName.Size = new Size(181, 32);
             txtUserName.TabIndex = 0;
@@ -156,6 +158,15 @@
             // tmCoolDown
             // 
             tmCoolDown.Tick += tmCoolDown_Tick;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(11, 58);
+            label3.Name = "label3";
+            label3.Size = new Size(38, 15);
+            label3.TabIndex = 6;
+            label3.Text = "label3";
             // 
             // Form1
             // 
@@ -183,11 +194,12 @@
         private PictureBox pbAvatar;
         private TextBox txtIPServer;
         private TextBox txtUserName;
-        private Button btnConnect;
+        private Button btnLan;
         private PictureBox pbControl;
         private ProgressBar prcbCoolDown;
         private Label label1;
         private Label label2;
         private System.Windows.Forms.Timer tmCoolDown;
+        private Label label3;
     }
 }

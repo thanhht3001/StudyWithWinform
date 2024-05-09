@@ -37,9 +37,9 @@ namespace StudyWithWinform
         {
             prcbCoolDown.PerformStep();
 
-            if(prcbCoolDown.Value >= prcbCoolDown.Maximum)
+            if (prcbCoolDown.Value >= prcbCoolDown.Maximum)
             {
-                
+
                 EndGame();
             }
         }
